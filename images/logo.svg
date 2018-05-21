@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="270" height="113" viewBox="0 0 270 113">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.14;
+      }
+
+      .cls-2 {
+        font-size: 18px;
+        font-family: Economica;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        font-size: 48px;
+        font-family: BebasNeue;
+      }
+    </style>
+  </defs>
+  <image width="270" height="113" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAABxBAMAAADWnFA2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEUuLS0uLS0uLS0uLS0AAAByWi7CAAAAA3RSTlP69/yt0/uVAAAAAWJLR0QEj2jZUQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IEEBMVKVmmgicAAABlSURBVGje7dsxAQAwDMOwjtLKn9uuYUgOGYEIeKaiM9tRieNycHBwcHBwcHBwcHBwcHBwcHBwxOPg4ODg4ODg4ODg4ODg4ODg4ODIx8HBwcHBwcHBwcHBwcHBwcHBESk93v7/9gG+TKmGgTcKZwAAAABJRU5ErkJggg=="/>
+  <image class="cls-1" x="135" y="19" width="1" height="76" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAABMCAQAAAAG2hWwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBBATFSlZpoInAAAAEUlEQVQI12P4r8LEwDCs0T8ARqICuK6P1eMAAAAASUVORK5CYII="/>
+  <text id="Italian_Restaurant" data-name="Italian Restaurant" class="cls-2" x="148" y="63.5">Italian Restaurant</text>
+  <text id="Bliss" class="cls-3" x="24.25" y="71.25">Bliss</text>
+</svg>
