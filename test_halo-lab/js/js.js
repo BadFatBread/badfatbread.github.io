@@ -86,8 +86,6 @@ form__desc.onblur = function validation () {
 
 const input__file = document.getElementById("form__file");
 const count = document.getElementById("count");
-input__file.addEventListener(
-    "change",
-    e => (count.innerHTML = e.target.files.length)
+input__file.addEventListener("change",e => (count.innerHTML = e.target.files.length)
 );
 
