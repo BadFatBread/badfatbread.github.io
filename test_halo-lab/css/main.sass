@@ -1,0 +1,321 @@
+
+
+
+//_mixins
+
+@mixin _768
+  @media (max-width: 768px)
+    @content
+@mixin _480
+  @media (max-width: 480px)
+    @content
+
+//presset
+li
+  list-style-type: none
+
+//colors
+$white: #ffffff
+$red: #DA3F5B
+$blue: #1E34A5
+$gradient__blue: linear-gradient(233.1deg, #216190 19.65%, #0834D0 81.25%)
+$gray: #636363
+$light__gray: #A7A7A7
+$black: #333333
+
+
+//styles
+*       // решил не подключать normalize
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+html, body
+  width: 100%
+  height: 100%
+  font-family: 'Open Sans', sans-serif
+  font-size: 16px
+  color: $black
+
+.test-wrapper
+  width: 100%
+  min-height: 100%
+  display: flex
+  -webkit-flex-direction: column
+  flex-direction: column
+  -webkit-justify-content: center
+  justify-content: center
+  -webkit-align-items: center
+  align-items: center
+  padding: 1rem
+  background: $gradient__blue
+
+
+.title        //main title
+  &__test
+    font-size: 2.5rem
+    text-align: center
+    color: $white
+    @include _768
+      font-size: 1.5rem
+  &__steps
+    display: flex
+    justify-content: space-between
+    -webkit-justify-content: space-between
+    padding: 1.125rem 0 3rem
+
+.steps__item
+  display: inline-block
+  width: 2rem
+  height: 2rem
+  line-height: 2rem
+  font-size: 1.125rem
+  border-radius: 50%
+  text-align: center
+  background: $blue
+  color: $white
+  @include _768
+    font-size: 1rem
+  &:nth-child(3)        //styles for number 3
+    background: $red
+  &_2       //styles for number 2 (lines around)
+    padding: 0 12.5rem
+    position: relative
+    z-index: 2
+    @include _768
+      padding: 0 4rem
+    &:after
+      content: ''
+      display: block
+      width: 40%
+      height: 1px
+      background: $white
+      position: absolute
+      transform: translateY(-50%)
+      top: 50%
+      right: 3%
+      z-index: -1
+      @include _768
+        width: 30%
+        right: 5%
+    &:before
+      content: ''
+      display: block
+      width: 40%
+      height: 1px
+      background: $white
+      position: absolute
+      -webkit-transform: translateY(-50%)
+      top: 50%
+      left: 3%
+      z-index: -1
+      @include _768
+        width: 30%
+        left: 5%
+
+//form__//form__//form__//form__
+//form__//form__//form__//form__
+//form__//form__//form__//form__
+//form__//form__//form__//form__
+
+.form__container
+  width: 38rem
+  max-width: 80%
+  border-radius: .5rem
+  padding: 3.5rem
+  background: $white
+  @include _768
+    max-width: 100%
+    padding: 2.5rem 2rem 2rem
+
+
+
+.form__aboutCompany       //forrm block
+  width: 100%
+  display: flex
+  justify-content: space-between
+  -webkit-justify-content: space-between
+  flex-wrap: wrap
+
+
+.form__label        //general style for label
+  display: block
+  font-size: 0.875rem
+  overflow: hidden
+  color: $light__gray
+  -webkit-transform: translate(0%, -50%)
+  transform: translate(0%, -50%)
+  position: absolute
+  top: 50%
+  left: 1rem
+  @include _480
+    font-size: .625rem
+
+.form       //general style for label
+  margin-bottom: 4rem
+  position: relative
+  @include _480
+    margin-bottom: 2.5rem
+  &__item       //style for first two inputs
+    width: 15.5rem
+    max-width: 46.05%
+    @include _480
+      width: 100%
+      max-width: 100%
+    &:nth-child(2)
+      width: 9.125rem
+      max-width: 38.78%
+      @include _480
+        width: 100%
+        max-width: 100%
+
+  &__area
+    width: 100%
+  &__desc
+    width: 100%
+    & .form__input
+      resize: none
+    & label
+      -webkit-transform: translate(0%, 0%)
+      transform: translate(0%, 0%)
+      top: 1rem
+
+.form__title        //subtitle inputs
+  padding-bottom: .5rem
+  font-weight: 600
+  color: $light__gray
+  -webkit-transform: translate(0, -50%)
+  transform: translate(0, -50%)
+  position: absolute
+  top: -.5rem
+  @include _480
+    //font-size: .625rem
+
+.form__input       //general styles for inputs
+  display: block
+  width: 100%
+  background: #F9F9F9
+  border-radius: .5rem
+  padding: .5rem 1rem
+  font-size: 1rem
+  line-height: 2rem
+  outline: none
+  border: none
+  border: 1px solid transparent //в js подставим цвет
+  &:focus ~ .form__label
+    color: transparent
+  &:not(:placeholder-shown) ~ .form__label
+    color: transparent
+
+.form__file       // style for input[file]
+  display: block
+  width: 100%
+  position: relative
+
+.form__file_icon        //upload file icon & desc
+  display: flex
+  align-items: center
+  position: absolute
+  -webkit-transform: translate(0%, 50%)
+  transform: translate(0%, 50%)
+  bottom: 50%
+  left: 1.5rem
+  & label       // label for input[file]
+    color: transparent      //спрятал точку
+  & span
+    font-size: .875rem
+    padding-left: 1rem
+    color: $black
+    @include _480
+      font-size: .725rem
+
+
+
+.form__f        //style for label input[file]
+  display: block
+  width: 100%
+  border-radius: .5rem
+  padding: .5rem 1rem
+  font-size: .875rem
+  color: $light__gray
+  line-height: 2rem
+  background: #F9F9F9
+  cursor: pointer
+  &:hover .file_icon path
+    fill: $gray
+  &:hover .form__file_icon span
+    color: $gray
+
+.input__file    //hide input[file]
+  width: 0.1px
+  height: 0.1px
+  opacity: 0
+  position: absolute
+  z-index: -10
+
+.file_icon path       //color icon input[file]
+  fill: $black
+
+
+
+.counter_uploads
+  font-size: .875rem
+  color: $light__gray
+  position: absolute
+  -webkit-transform: translate(0, 100%)
+  transform: translate(0, 100%)
+  bottom: 50%
+  right: 1rem
+  @include _768
+    -webkit-transform: translate(0%, -100%)
+    transform: translate(0%, -100%)
+    bottom: unset
+    top: -.5rem
+    font-size: .725rem
+
+.form_submit    //submit form btn
+  all: unset
+  border-radius: .5rem
+  padding: 1rem 2rem
+  background: $red
+  color: $white
+  cursor: pointer
+  -webkit-transition: all .1s
+  &:hover
+    background: rgba(255, 65, 88, 0.85)
+    box-shadow: 1px 2px 6px rgb(0, 0, 0, .16)
+  @include _480
+    width: 100%
+    text-align: center
+
+
+/////////classes for JS
+
+.valid
+  font-size: 0.75rem
+  font-weight: normal
+  color: $red
+  -webkit-transform: translate(0%, 100%)
+  position: absolute
+  bottom: -.5rem
+  left: 0
+  @include _480
+    font-size: .625rem
+    bottom: -.25rem
+
+.form__input
+  border: 1px solid transparent
+
+.invalid
+  border-color: $red
+
+._n
+  opacity: 0
+
+.star_red
+  color: $red
+
+.star_green
+  color: green
+
+

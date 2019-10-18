@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+
+    <section class="test-wrapper">
+        <div class="title">
+            <h1 class="title__test">Your first project</h1>
+            <ul class="title__steps">
+                <li class="steps__item">1</li>
+                <li class="steps__item_2">
+                    <div class="steps__item">2</div>
+                </li>
+                <li class="steps__item">3</li>
+            </ul>
+        </div>
+        <div class="form__container">
+            <form class="form__aboutCompany" id="form__aboutCompany" method="post" name="form__aboutCompany"  action="" onsubmit="return validation();" >
+<!--//////////////////////////////////////////////////-->
+                <div class="form form__item">
+                    <h6 class="form__title">Your company name </h6>
+                    <input class="form__input" type="text" id="form__companyName" placeholder=" ">
+                    <label class="form__label" for="form__companyName"  >Type text</label>
+                </div>
+<!--//////////////////////////////////////////////////-->
+                <div class="form form__item">
+                    <h6 class="form__title">Number of people <span class="star star_red">*</span></h6>
+                    <input class="form__input" type="text" id="form__peopleNumber" placeholder=" ">
+                    <label class="form__label" for="form__peopleNumber">1-99</label>
+                    <div  class="valid _n" >Your content is not valid</div>
+                </div>
+<!--//////////////////////////////////////////////////-->
+                <div class="form form__area">
+                    <h6 class="form__title">Business area <span class="star star_red">*</span></h6>
+                    <input class="form__input" type="text" id="form__bArea" placeholder=" ">
+                    <label class="form__label" for="form__bArea">Design, Marketing, Development, etc.</label>
+                    <div  class="valid _n" >Your content is not valid</div>
+                </div>
+<!--//////////////////////////////////////////////////-->
+                <div class="form form__desc" id="form">
+                    <h6 class="form__title">Description <span class="star star_red">*</span></h6>
+                    <textarea class="form__input" name="" id="form__desc" cols="30" rows="6" wrap="hard" placeholder=" "></textarea>
+                    <label class="form__label" for="form__desc">Type text</label>
+                    <div  class="valid _n" >Your content is not valid</div>
+                </div>
+<!--//////////////////////////////////////////////////-->
+                <div class="form form__file">
+                    <input class="input__file" type="file" id="form__file" placeholder=" ">
+                    <label class="form__f" for="form__file">
+                        <div class="form__file_icon">
+                            <svg class="file_icon" width="24" height="21" viewBox="0 0 24 21"  xmlns="http://www.w3.org/2000/svg">
+                                <path id="Folder" fill-rule="evenodd" clip-rule="evenodd" d="M11.7 3.725H21.6C22.9236 3.725 24 4.8026 24 6.125V18.125C24 19.4486 22.9236 20.525 21.6 20.525H2.4C1.0764 20.525 0 19.4486 0 18.125V2.525C0 1.2026 1.0764 0.125 2.4 0.125H7.8C8.5512 0.125 9.27 0.4838 9.72 1.085L11.7 3.725ZM2.4 2.525V18.125H21.6012L21.6 6.125H11.7C10.9488 6.125 10.23 5.7662 9.78 5.165L7.8 2.525H2.4ZM11.0571 8.35391H12.9428V11.1825H15.7714V13.0682H12.9428V15.8968H11.0571V13.0682H8.22851V11.1825H11.0571V8.35391Z" fill="#333333"/>
+                            </svg>
+                            <span>Add file as attachment</span>
+                        </div>.
+                    </label>
+                    <div class="counter_uploads" id="counter_uploads"> <span id="count">0</span> files</div>
+                </div>
+                <button class="form_submit" type="submit" form="form__aboutCompany" value="Submit">Submit</button>
+            </form>
+
+
+
+        </div>
+
+    </section>
+
+
+    <script src="js/js.js" ></script>
+</body>
+</html>
+
+
+
