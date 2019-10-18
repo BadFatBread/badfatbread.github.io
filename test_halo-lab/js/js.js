@@ -81,3 +81,13 @@ form__desc.onblur = function validation () {
         star[2].classList.add('star_green');
     }
 };
+
+
+
+const input__file = document.getElementById("form__file");
+const count = document.getElementById("count");
+input__file.addEventListener(
+    "change",
+    e => (count.innerHTML = e.target.files.length)
+);
+
