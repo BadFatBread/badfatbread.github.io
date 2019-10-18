@@ -16,7 +16,6 @@ console.log(num);
 form__peopleNumber.onblur = function validation() {
 
     let num = form__peopleNumber.value*form__peopleNumber.value;
-    // if ()
 
     if(!form__peopleNumber.value){
         form__input[1].classList.add("invalid");
