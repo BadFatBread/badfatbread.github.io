@@ -49,7 +49,6 @@ form__peopleNumber.onblur = function validation() {
 };
 
 form__bArea.onblur = function validation () {
-    event.preventDefault();
 
     if (!form__bArea.value){
         form__input[2].classList.add('invalid');
