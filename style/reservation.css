@@ -168,7 +168,7 @@ input, .drop_down_list{
 	border: 0.027rem solid #919191;
 	transition: .3s;
 }
-.more:hover.more{
+.more:hover{
     color: #ffffff;
 	background: #919191;
 }
