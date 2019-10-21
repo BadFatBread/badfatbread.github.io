@@ -1,0 +1,927 @@
+@font-face {
+  font-family: "Proxima Nova Cn Lt";
+  src: url("ProximaNovaCond-LightIt.eot");
+  src: local("Proxima Nova Condensed Light Italic"), local("ProximaNovaCond-LightIt"), url("ProximaNovaCond-LightIt.eot?#iefix") format("embedded-opentype"), url("ProximaNovaCond-LightIt.woff") format("woff"), url("ProximaNovaCond-LightIt.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Proxima Nova Lt";
+  src: url("ProximaNova-LightIt.eot");
+  src: local("Proxima Nova Light Italic"), local("ProximaNova-LightIt"), url("ProximaNova-LightIt.eot?#iefix") format("embedded-opentype"), url("ProximaNova-LightIt.woff") format("woff"), url("ProximaNova-LightIt.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Proxima Nova Cn Rg";
+  src: url("ProximaNovaCond-Regular.eot");
+  src: local("Proxima Nova Condensed Regular"), local("ProximaNovaCond-Regular"), url("ProximaNovaCond-Regular.eot?#iefix") format("embedded-opentype"), url("ProximaNovaCond-Regular.woff") format("woff"), url("ProximaNovaCond-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Th";
+  src: url("ProximaNova-Extrabld.eot");
+  src: local("Proxima Nova Extrabold"), local("ProximaNova-Extrabld"), url("ProximaNova-Extrabld.eot?#iefix") format("embedded-opentype"), url("ProximaNova-Extrabld.woff") format("woff"), url("ProximaNova-Extrabld.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Cn Bl";
+  src: url("ProximaNovaCond-Black.eot");
+  src: local("Proxima Nova Condensed Black"), local("ProximaNovaCond-Black"), url("ProximaNovaCond-Black.eot?#iefix") format("embedded-opentype"), url("ProximaNovaCond-Black.woff") format("woff"), url("ProximaNovaCond-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Cn Th";
+  src: url("ProximaNovaCond-ExtrabldIt.eot");
+  src: local("Proxima Nova Condensed Extrabold Italic"), local("ProximaNovaCond-ExtrabldIt"), url("ProximaNovaCond-ExtrabldIt.eot?#iefix") format("embedded-opentype"), url("ProximaNovaCond-ExtrabldIt.woff") format("woff"), url("ProximaNovaCond-ExtrabldIt.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("ProximaNova-Regular.eot");
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("ProximaNova-Regular.woff") format("woff"), url("ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Lt";
+  src: url("ProximaNova-Semibold.eot");
+  src: local("Proxima Nova Semibold"), local("ProximaNova-Semibold"), url("ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("ProximaNova-Semibold.woff") format("woff"), url("ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova ExCn Th";
+  src: url("ProximaNovaExCn-Thin.eot");
+  src: local("Proxima Nova Extra Condensed Thin"), local("ProximaNovaExCn-Thin"), url("ProximaNovaExCn-Thin.eot?#iefix") format("embedded-opentype"), url("ProximaNovaExCn-Thin.woff") format("woff"), url("ProximaNovaExCn-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Cn Lt";
+  src: url("ProximaNovaCond-Semibold.eot");
+  src: local("Proxima Nova Condensed Semibold"), local("ProximaNovaCond-Semibold"), url("ProximaNovaCond-Semibold.eot?#iefix") format("embedded-opentype"), url("ProximaNovaCond-Semibold.woff") format("woff"), url("ProximaNovaCond-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova ExCn Lt";
+  src: url("ProximaNovaExCn-SemiboldIt.eot");
+  src: local("Proxima Nova Extra Condensed Semibold Italic"), local("ProximaNovaExCn-SemiboldIt"), url("ProximaNovaExCn-SemiboldIt.eot?#iefix") format("embedded-opentype"), url("ProximaNovaExCn-SemiboldIt.woff") format("woff"), url("ProximaNovaExCn-SemiboldIt.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Proxima Nova ExCn Lt";
+  src: url("ProximaNovaExCn-Semibold.eot");
+  src: local("Proxima Nova Extra Condensed Semibold"), local("ProximaNovaExCn-Semibold"), url("ProximaNovaExCn-Semibold.eot?#iefix") format("embedded-opentype"), url("ProximaNovaExCn-Semibold.woff") format("woff"), url("ProximaNovaExCn-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Th";
+  src: url("ProximaNova-ThinIt.eot");
+  src: local("Proxima Nova Thin Italic"), local("ProximaNova-ThinIt"), url("ProximaNova-ThinIt.eot?#iefix") format("embedded-opentype"), url("ProximaNova-ThinIt.woff") format("woff"), url("ProximaNova-ThinIt.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Proxima Nova Cn Th";
+  src: url("ProximaNovaCond-Thin.eot");
+  src: local("Proxima Nova Condensed Thin"), local("ProximaNovaCond-Thin"), url("ProximaNovaCond-Thin.eot?#iefix") format("embedded-opentype"), url("ProximaNovaCond-Thin.woff") format("woff"), url("ProximaNovaCond-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Cn Rg";
+  src: url("ProximaNovaCond-RegularIt.eot");
+  src: local("Proxima Nova Condensed Regular Italic"), local("ProximaNovaCond-RegularIt"), url("ProximaNovaCond-RegularIt.eot?#iefix") format("embedded-opentype"), url("ProximaNovaCond-RegularIt.woff") format("woff"), url("ProximaNovaCond-RegularIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Proxima Nova ExCn Th";
+  src: url("ProximaNovaExCn-ThinIt.eot");
+  src: local("Proxima Nova Extra Condensed Thin Italic"), local("ProximaNovaExCn-ThinIt"), url("ProximaNovaExCn-ThinIt.eot?#iefix") format("embedded-opentype"), url("ProximaNovaExCn-ThinIt.woff") format("woff"), url("ProximaNovaExCn-ThinIt.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Proxima Nova Lt";
+  src: url("ProximaNova-SemiboldIt.eot");
+  src: local("Proxima Nova Semibold Italic"), local("ProximaNova-SemiboldIt"), url("ProximaNova-SemiboldIt.eot?#iefix") format("embedded-opentype"), url("ProximaNova-SemiboldIt.woff") format("woff"), url("ProximaNova-SemiboldIt.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("ProximaNova-RegularIt.eot");
+  src: local("Proxima Nova Regular Italic"), local("ProximaNova-RegularIt"), url("ProximaNova-RegularIt.eot?#iefix") format("embedded-opentype"), url("ProximaNova-RegularIt.woff") format("woff"), url("ProximaNova-RegularIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Proxima Nova Cn Th";
+  src: url("ProximaNovaCond-Extrabld.eot");
+  src: local("Proxima Nova Condensed Extrabold"), local("ProximaNovaCond-Extrabld"), url("ProximaNovaCond-Extrabld.eot?#iefix") format("embedded-opentype"), url("ProximaNovaCond-Extrabld.woff") format("woff"), url("ProximaNovaCond-Extrabld.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova ExCn Th";
+  src: url("ProximaNovaExCn-ExtrabldIt.eot");
+  src: local("Proxima Nova Extra Condensed Extrabold Italic"), local("ProximaNovaExCn-ExtrabldIt"), url("ProximaNovaExCn-ExtrabldIt.eot?#iefix") format("embedded-opentype"), url("ProximaNovaExCn-ExtrabldIt.woff") format("woff"), url("ProximaNovaExCn-ExtrabldIt.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Proxima Nova ExCn Bl";
+  src: url("ProximaNovaExCn-BlackIt.eot");
+  src: local("Proxima Nova Extra Condensed Black Italic"), local("ProximaNovaExCn-BlackIt"), url("ProximaNovaExCn-BlackIt.eot?#iefix") format("embedded-opentype"), url("ProximaNovaExCn-BlackIt.woff") format("woff"), url("ProximaNovaExCn-BlackIt.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Proxima Nova ExCn Lt";
+  src: url("ProximaNovaExCn-LightIt.eot");
+  src: local("Proxima Nova Extra Condensed Light Italic"), local("ProximaNovaExCn-LightIt"), url("ProximaNovaExCn-LightIt.eot?#iefix") format("embedded-opentype"), url("ProximaNovaExCn-LightIt.woff") format("woff"), url("ProximaNovaExCn-LightIt.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Proxima Nova Cn Th";
+  src: url("ProximaNovaCond-ThinIt.eot");
+  src: local("Proxima Nova Condensed Thin Italic"), local("ProximaNovaCond-ThinIt"), url("ProximaNovaCond-ThinIt.eot?#iefix") format("embedded-opentype"), url("ProximaNovaCond-ThinIt.woff") format("woff"), url("ProximaNovaCond-ThinIt.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Proxima Nova ExCn Lt";
+  src: url("ProximaNovaExCn-Light.eot");
+  src: local("Proxima Nova Extra Condensed Light"), local("ProximaNovaExCn-Light"), url("ProximaNovaExCn-Light.eot?#iefix") format("embedded-opentype"), url("ProximaNovaExCn-Light.woff") format("woff"), url("ProximaNovaExCn-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Cn Rg";
+  src: url("ProximaNovaCond-BoldIt.eot");
+  src: local("Proxima Nova Condensed Bold Italic"), local("ProximaNovaCond-BoldIt"), url("ProximaNovaCond-BoldIt.eot?#iefix") format("embedded-opentype"), url("ProximaNovaCond-BoldIt.woff") format("woff"), url("ProximaNovaCond-BoldIt.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Proxima Nova ExCn Th";
+  src: url("ProximaNovaExCn-Extrabld.eot");
+  src: local("Proxima Nova Extra Condensed Extrabold"), local("ProximaNovaExCn-Extrabld"), url("ProximaNovaExCn-Extrabld.eot?#iefix") format("embedded-opentype"), url("ProximaNovaExCn-Extrabld.woff") format("woff"), url("ProximaNovaExCn-Extrabld.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova ExCn Rg";
+  src: url("ProximaNovaExCn-BoldIt.eot");
+  src: local("Proxima Nova Extra Condensed Bold Italic"), local("ProximaNovaExCn-BoldIt"), url("ProximaNovaExCn-BoldIt.eot?#iefix") format("embedded-opentype"), url("ProximaNovaExCn-BoldIt.woff") format("woff"), url("ProximaNovaExCn-BoldIt.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Proxima Nova Bl";
+  src: url("ProximaNova-Black.eot");
+  src: local("Proxima Nova Black"), local("ProximaNova-Black"), url("ProximaNova-Black.eot?#iefix") format("embedded-opentype"), url("ProximaNova-Black.woff") format("woff"), url("ProximaNova-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("ProximaNova-Bold.eot");
+  src: local("Proxima Nova Bold"), local("ProximaNova-Bold"), url("ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("ProximaNova-Bold.woff") format("woff"), url("ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova ExCn Rg";
+  src: url("ProximaNovaExCn-Bold.eot");
+  src: local("Proxima Nova Extra Condensed Bold"), local("ProximaNovaExCn-Bold"), url("ProximaNovaExCn-Bold.eot?#iefix") format("embedded-opentype"), url("ProximaNovaExCn-Bold.woff") format("woff"), url("ProximaNovaExCn-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Th";
+  src: url("ProximaNovaT-Thin.eot");
+  src: local("Proxima Nova Thin"), local("ProximaNovaT-Thin"), url("ProximaNovaT-Thin.eot?#iefix") format("embedded-opentype"), url("ProximaNovaT-Thin.woff") format("woff"), url("ProximaNovaT-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("ProximaNova-BoldIt.eot");
+  src: local("Proxima Nova Bold Italic"), local("ProximaNova-BoldIt"), url("ProximaNova-BoldIt.eot?#iefix") format("embedded-opentype"), url("ProximaNova-BoldIt.woff") format("woff"), url("ProximaNova-BoldIt.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Proxima Nova Cn Rg";
+  src: url("ProximaNovaCond-Bold.eot");
+  src: local("Proxima Nova Condensed Bold"), local("ProximaNovaCond-Bold"), url("ProximaNovaCond-Bold.eot?#iefix") format("embedded-opentype"), url("ProximaNovaCond-Bold.woff") format("woff"), url("ProximaNovaCond-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova ExCn Bl";
+  src: url("ProximaNovaExCn-Black.eot");
+  src: local("Proxima Nova Extra Condensed Black"), local("ProximaNovaExCn-Black"), url("ProximaNovaExCn-Black.eot?#iefix") format("embedded-opentype"), url("ProximaNovaExCn-Black.woff") format("woff"), url("ProximaNovaExCn-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova ExCn Rg";
+  src: url("ProximaNovaExCn-RegularIt.eot");
+  src: local("Proxima Nova Extra Condensed Regular Italic"), local("ProximaNovaExCn-RegularIt"), url("ProximaNovaExCn-RegularIt.eot?#iefix") format("embedded-opentype"), url("ProximaNovaExCn-RegularIt.woff") format("woff"), url("ProximaNovaExCn-RegularIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Proxima Nova Cn Lt";
+  src: url("ProximaNovaCond-Light.eot");
+  src: local("Proxima Nova Condensed Light"), local("ProximaNovaCond-Light"), url("ProximaNovaCond-Light.eot?#iefix") format("embedded-opentype"), url("ProximaNovaCond-Light.woff") format("woff"), url("ProximaNovaCond-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Th";
+  src: url("ProximaNova-ExtrabldIt.eot");
+  src: local("Proxima Nova Extrabold Italic"), local("ProximaNova-ExtrabldIt"), url("ProximaNova-ExtrabldIt.eot?#iefix") format("embedded-opentype"), url("ProximaNova-ExtrabldIt.woff") format("woff"), url("ProximaNova-ExtrabldIt.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Proxima Nova Cn Bl";
+  src: url("ProximaNovaCond-BlackIt.eot");
+  src: local("Proxima Nova Condensed Black Italic"), local("ProximaNovaCond-BlackIt"), url("ProximaNovaCond-BlackIt.eot?#iefix") format("embedded-opentype"), url("ProximaNovaCond-BlackIt.woff") format("woff"), url("ProximaNovaCond-BlackIt.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Proxima Nova ExCn Rg";
+  src: url("ProximaNovaExCn-Regular.eot");
+  src: local("Proxima Nova Extra Condensed Regular"), local("ProximaNovaExCn-Regular"), url("ProximaNovaExCn-Regular.eot?#iefix") format("embedded-opentype"), url("ProximaNovaExCn-Regular.woff") format("woff"), url("ProximaNovaExCn-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Lt";
+  src: url("ProximaNova-Light.eot");
+  src: local("Proxima Nova Light"), local("ProximaNova-Light"), url("ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("ProximaNova-Light.woff") format("woff"), url("ProximaNova-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Cn Lt";
+  src: url("ProximaNovaCond-SemiboldIt.eot");
+  src: local("Proxima Nova Condensed Semibold Italic"), local("ProximaNovaCond-SemiboldIt"), url("ProximaNovaCond-SemiboldIt.eot?#iefix") format("embedded-opentype"), url("ProximaNovaCond-SemiboldIt.woff") format("woff"), url("ProximaNovaCond-SemiboldIt.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Proxima Nova Bl";
+  src: url("ProximaNova-BlackIt.eot");
+  src: local("Proxima Nova Black Italic"), local("ProximaNova-BlackIt"), url("ProximaNova-BlackIt.eot?#iefix") format("embedded-opentype"), url("ProximaNova-BlackIt.woff") format("woff"), url("ProximaNova-BlackIt.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, span {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.col-1 {
+  width: 11.43%;
+  padding: 0 16px;
+}
+
+.col-2 {
+  width: 24.09%;
+  padding: 0 16px;
+}
+
+.col-3 {
+  width: 36.74%;
+  padding: 0 16px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Proxima Nova ExCn Lt";
+  src: url("ProximaNovaExCn-Semibold.eot");
+  src: local("Proxima Nova Extra Condensed Semibold"), local("ProximaNovaExCn-Semibold"), url("ProximaNovaExCn-Semibold.eot?#iefix") format("embedded-opentype"), url("ProximaNovaExCn-Semibold.woff") format("woff"), url("ProximaNovaExCn-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1344px;
+  width: 100%;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.maincontent {
+  padding-bottom: 20rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.footer {
+  height: 25rem;
+  margin-top: -20rem;
+  background: #D6D6D6;
+}
+
+.row_center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+section {
+  padding-top: 7.5rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1800px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 2500px;
+  }
+}
+.header {
+  width: 100%;
+  background: linear-gradient(171.91deg, #11C4D4 0%, #89E74F 100%);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+.header:before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 250px;
+  background: #fff;
+  position: absolute;
+}
+
+.header__left {
+  width: 30%;
+  background: #fff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header__right {
+  width: 69.9%;
+  height: 80px;
+  background: linear-gradient(171.91deg, #11C4D4 0%, #89E74F 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 8px;
+  color: #fafafa;
+}
+.header__right a {
+  color: #fafafa;
+}
+
+.header_btn {
+  font-size: 1.5rem;
+  font-family: "Proxima Nova ExCn Lt";
+  src: url("ProximaNovaExCn-Semibold.eot");
+  src: local("Proxima Nova Extra Condensed Semibold"), local("ProximaNovaExCn-Semibold"), url("ProximaNovaExCn-Semibold.eot?#iefix") format("embedded-opentype"), url("ProximaNovaExCn-Semibold.woff") format("woff"), url("ProximaNovaExCn-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  transition: all 0.2s, color 0s;
+}
+.header_btn a {
+  transition: 0.2s;
+  border-bottom: 2px solid transparent;
+}
+.header_btn:hover a {
+  margin-left: 5px;
+  color: #4F4F4F;
+  border-color: #fafafa;
+}
+
+.header__title {
+  font-size: 1.5rem;
+  border-bottom: 1px solid transparent;
+  transition: 0.2s;
+}
+.header__title a {
+  transition: 0.2s;
+  border-bottom: 2px solid transparent;
+}
+.header__title:hover a {
+  margin-left: 5px;
+  color: #4F4F4F;
+  border-color: #fafafa;
+}
+
+.span__green {
+  color: #89E74F;
+}
+
+.footer__flex {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-right: 10rem;
+}
+
+.footer__logo {
+  width: 8rem;
+}
+
+.footer__products {
+  width: 35%;
+}
+
+.footer__list {
+  font-family: "Proxima Nova Cn Rg";
+  src: url("ProximaNovaCond-Regular.eot");
+  src: local("Proxima Nova Condensed Regular"), local("ProximaNovaCond-Regular"), url("ProximaNovaCond-Regular.eot?#iefix") format("embedded-opentype"), url("ProximaNovaCond-Regular.woff") format("woff"), url("ProximaNovaCond-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.list__title {
+  font-size: 1.5rem;
+  padding: 4rem 0 1rem;
+  color: #373737;
+}
+
+.footer__item {
+  display: block;
+  font-size: 1rem;
+  color: #4F4F4F;
+  padding: 0.5rem 0;
+}
+
+.inp {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  border: 1px solid #828282;
+  background: #F2F2F2;
+  width: 100%;
+}
+
+.btn__footer {
+  display: block;
+  width: 10rem;
+  text-align: center;
+  padding: 0.5rem 2rem;
+  background: #F2F2F2;
+  border-radius: 2rem;
+  border: 1px solid #828282;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.btn__footer:hover {
+  background: #89E74F;
+}
+
+.main-screen {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0;
+  padding-left: 2rem;
+  padding-top: 5rem;
+}
+
+.main-screen__left, .main-screen__right {
+  width: 49.99%;
+}
+
+.big__title {
+  font-size: 5rem;
+  color: #D6D6D6;
+}
+
+.span__green {
+  color: #89E74F;
+}
+
+.main-screen__right {
+  width: 49.9%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  background: #F2F2F2;
+}
+
+.main__pic {
+  width: 75%;
+  transform: translate(0, -10%);
+}
+
+.main__down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  color: white;
+  background: #89E74F;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  bottom: 16px;
+  left: 50%;
+}
+.main__down span {
+  margin-top: -2px;
+}
+
+.main__call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  background: #4F4F4F;
+  position: fixed;
+  transform: translate(0, -50%);
+  bottom: 16px;
+  right: 5vw;
+  transition: 0.2s;
+}
+.main__call:hover {
+  background: #828282;
+}
+
+.call__pic {
+  display: block;
+  width: 65%;
+  margin-bottom: -2px;
+}
+
+.main__call {
+  z-index: 3;
+  background: linear-gradient(171.91deg, #11C4D4 0%, #89E74F 100%);
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+  animation: pulse 1s infinite;
+}
+.main__call:hover {
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+.title {
+  font-size: 4rem;
+  color: #4F4F4F;
+  text-transform: uppercase;
+}
+
+.title__desc {
+  font-size: 2rem;
+  font-family: "Proxima Nova Cn Rg";
+  src: url("ProximaNovaCond-Regular.eot");
+  src: local("Proxima Nova Condensed Regular"), local("ProximaNovaCond-Regular"), url("ProximaNovaCond-Regular.eot?#iefix") format("embedded-opentype"), url("ProximaNovaCond-Regular.woff") format("woff"), url("ProximaNovaCond-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  color: #828282;
+  line-height: 3rem;
+  width: 60%;
+}
+
+.product__desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.product__img {
+  width: 36.74%;
+}
+
+.product__item {
+  color: #4F4F4F;
+  font-size: 1.3rem;
+  line-height: 4rem;
+  position: relative;
+  transition: 0.3s;
+  font-family: "Proxima Nova Cn Rg";
+  src: url("ProximaNovaCond-Regular.eot");
+  src: local("Proxima Nova Condensed Regular"), local("ProximaNovaCond-Regular"), url("ProximaNovaCond-Regular.eot?#iefix") format("embedded-opentype"), url("ProximaNovaCond-Regular.woff") format("woff"), url("ProximaNovaCond-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  cursor: pointer;
+}
+.product__item:after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 1px;
+  background: #4F4F4F;
+  transform: translate(-100%, -50%);
+  top: 50%;
+  left: -16px;
+  position: absolute;
+  transition: 0.3s;
+}
+.product__item:hover:after {
+  width: 100px;
+  background: #89E74F;
+}
+.product__item:hover {
+  color: #89E74F;
+}
+
+.expirience {
+  padding-top: 12rem;
+}
+
+.img-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img__item {
+  width: 24.09%;
+  display: block;
+  overflow: hidden;
+  border-radius: 1rem;
+  transition: 0.6s;
+}
+.img__item img {
+  display: block;
+}
+.img__item:hover {
+  transform: translate(0, -0.5rem);
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.video__list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  flex-wrap: wrap;
+}
+
+.video__item {
+  display: block;
+  width: 32%;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: 0.6s;
+}
+.video__item iframe {
+  display: block;
+}
+.video__item:hover {
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.pad {
+  padding-bottom: 4rem;
+}
+
+.sentence {
+  padding-top: 12rem;
+}
+
+.sentence__action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4rem;
+  width: 90%;
+}
+
+.action {
+  width: 30%;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 1rem;
+}
+
+.action1 {
+  width: 20%;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 1rem;
+}
+
+.action__plus {
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  margin-left: 80px;
+}
+.action__plus:before {
+  content: "";
+  display: block;
+  height: 0.5rem;
+  width: 3rem;
+  background: #4F4F4F;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.action__plus:after {
+  content: "";
+  display: block;
+  width: 0.5rem;
+  height: 3rem;
+  background: #4F4F4F;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.action__btn_txt {
+  display: block;
+  border-bottom: 1px solid transparent;
+  transition: 0.2s;
+}
+
+.action__btn {
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  color: #fafafa;
+  background: linear-gradient(171.91deg, #11C4D4 0%, #89E74F 100%);
+  padding: 0.8rem 5rem;
+  border-radius: 2rem;
+  transition: 0.2s;
+}
+.action__btn:hover {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
+.action__btn:hover .action__btn_txt {
+  color: #4F4F4F;
+  border-color: #fff;
+}
+
+.user_wrapper {
+  padding: 0 10rem 0 2rem;
+}
+
+.profi__user {
+  display: flex;
+  align-items: center;
+  padding-top: 4rem;
+  width: 70%;
+}
+
+.user__avatar {
+  width: 6rem;
+  height: 6rem;
+  display: block;
+  border-radius: 20rem;
+  background: #4F4F4F;
+  overflow: hidden;
+}
+.user__avatar img {
+  display: block;
+  width: 10%;
+}
+
+.user__name {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  color: #4F4F4F;
+}
+
+.user__phone {
+  font-size: 2rem;
+  color: #D6D6D6;
+}
+
+.user__size {
+  font-size: 1.5rem;
+}
+
+.dealers {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 200px 0 160px;
+}
+
+.dealers__communicate {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.libra-agro {
+  width: 20%;
+}
+
+.call__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40rem;
+  padding: 2rem 0;
+}
+
+.call__txt {
+  color: #89E74F;
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+.call__btn_ {
+  display: block;
+  padding: 0.5rem 5rem;
+  background: linear-gradient(171.91deg, #11C4D4 0%, #89E74F 100%);
+  border-radius: 2rem;
+  color: #fafafa;
+  font-size: 1.5rem;
+  border-bottom: 1px solid transparent;
+  transition: 0.2s;
+}
+.call__btn_:hover {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
+.call__btn_:hover .action__btn_txt {
+  color: #4F4F4F;
+  border-color: #fff;
+}
+
+/*# sourceMappingURL=main.css.map */

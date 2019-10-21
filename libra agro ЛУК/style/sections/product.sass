@@ -1,0 +1,52 @@
+
+
+
+
+.title
+  font-size: 4rem
+  color: $gray
+  text-transform: uppercase
+
+.title__desc
+  font-size: 2rem
+  @include extra_con(normal__regular)
+  color: #828282
+  line-height: 3rem
+  width: 60%
+
+.product__desc
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-top: 80px
+
+.product__img
+  width: 36.74%
+
+.product__item
+  color:  $gray
+  font-size: 1.3rem
+  line-height: 4rem
+  position: relative
+  transition: .3s
+  @include extra_con(normal__regular)
+  cursor: pointer
+  &:after
+    content: ''
+    display: block
+    height: 4px
+    width: 1px
+    background: $gray
+    transform: translate(-100%, -50%)
+    top: 50%
+    left: -16px
+    position: absolute
+    transition: .3s
+  &:hover:after
+    width: 100px
+    background: $green
+  &:hover
+    color: $green
+
+
+

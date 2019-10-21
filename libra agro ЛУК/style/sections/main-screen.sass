@@ -1,0 +1,116 @@
+
+
+
+.main-screen
+  display: flex
+  height: 100vh
+  align-items: center
+  justify-content: space-between
+  position: relative
+  padding: 0
+  padding-left: 2rem
+  padding-top: 5rem
+
+
+.main-screen__left, .main-screen__right
+  width: 49.99%
+
+.big__title
+  font-size: 5rem
+  color: $light_gray
+.span__green
+  color: $green
+
+.main-screen__right
+  width: 49.9%
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  height: 100%
+  background: $lighter-gray
+
+.main__pic
+  width: 75%
+  transform: translate(0, -10%)
+  //position: absolute
+  //right: 0
+  //top: 50%
+
+
+.main__down
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 64px
+  height: 64px
+  border-radius: 50%
+  color: white
+  background: $green
+  position: absolute
+  transform: translate(-50%, -50%)
+  text-align: center
+  bottom: 16px
+  left: 50%
+  & span
+    margin-top: -2px
+
+.main__call
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 64px
+  height: 64px
+  box-shadow: $shadow
+  border-radius: 50%
+  background: $gray
+  position: fixed
+  transform: translate(0, -50%)
+  bottom: 16px
+  right: 5vw
+  transition: .2s
+  &:hover
+    background: $dark_gray
+
+
+
+.call__pic
+  display: block
+  width: 65%
+  margin-bottom: -2px
+
+.main__call
+  //margin: 100px
+  //display: block
+  //width: 22px
+  //height: 22px
+  //border-radius: 50%
+  z-index: 3
+  background: $gradient
+  cursor: pointer
+  box-shadow: 0 0 0 rgba(204, 169, 44, 0.4)
+  animation: pulse 1s infinite
+  &:hover
+    animation: none
+
+@-webkit-keyframes pulse
+  0%
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4)
+
+  70%
+    -webkit-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0)
+
+  100%
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0)
+
+@keyframes pulse
+  0%
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4)
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4)
+
+  70%
+    -moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0)
+    box-shadow: 0 0 0 10px rgba(204, 169, 44, 0)
+
+  100%
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0)
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0)

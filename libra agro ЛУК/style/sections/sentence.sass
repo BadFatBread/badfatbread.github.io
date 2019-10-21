@@ -1,0 +1,72 @@
+
+
+.sentence
+  padding-top: 12rem
+
+.sentence__action
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-top: 4rem
+  width: 90%
+
+
+.action
+  width: 30%
+  overflow: hidden
+  background: #fff
+  border-radius: 1rem
+
+.action1
+  width: 20%
+  overflow: hidden
+  background: #fff
+  border-radius: 1rem
+
+.action__plus
+  width: 1rem
+  height: 1rem
+  position: relative
+  margin-left: 80px
+  &:before
+    content: ''
+    display: block
+    height: .5rem
+    width: 3rem
+    background: $gray
+    position: absolute
+    transform: translate(-50%, -50%)
+  &:after
+    content: ''
+    display: block
+    width: .5rem
+    height: 3rem
+    background: $gray
+    position: absolute
+    transform: translate(-50%, -50%)
+
+.action__btn_txt
+  display: block
+  border-bottom: 1px solid transparent
+  transition: .2s
+
+.action__btn
+  display: flex
+  //width: 4rem
+  text-transform: uppercase
+  justify-content: center
+  align-items: center
+  color: $white
+  background: $gradient
+  padding: .8rem 5rem
+  border-radius: 2rem
+  transition: .2s
+  &:hover
+    box-shadow: $shadow
+  &:hover .action__btn_txt
+    color: $gray
+    border-color: #fff
+
+
+
+
