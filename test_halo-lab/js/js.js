@@ -78,6 +78,7 @@ form__desc.onblur = function validation () {
         valid[2].classList.add('_n');
         star[2].classList.remove('star_red');
         star[2].classList.add('star_green');
+        return false;
     }
 };
 
